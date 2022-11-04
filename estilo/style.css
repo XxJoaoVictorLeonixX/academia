@@ -1,1 +1,75 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    width: 100vw;
+    height: 100vh;
+    font-size:62.5% ;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background: linear-gradient(rgba(17,17,17,0.8), rgba(20,20,20,1)), url(../imagem/Treino-de-hipertrofia-para-o-bíceps-–-divisão-ABCDE-1024x576.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-position-y: 0px;
+}
+header{
+    width: 100%;
+    height: 7vh;
+    background-color: rgba(22,22,22,0.2);
+}
+.menu-content{
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+}
+.logo{
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+}
+.list-itens{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+.list-itens a{
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+.list-itens a:before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: rgba(251,255,0);
+    transition:all 1.5s ease ;
+}
+.list-itens a:hover:before{
+    width: 100%;
+}
+main{
+    height: 93vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
